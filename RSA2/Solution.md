@@ -43,7 +43,7 @@ ciphertext = 164587995846552196756222528960347216486156857750585447823186963
 The *make_key()* function just generates RSA key.
 
 
-Looking at **sign()**, it gives the RSA signature of the input string.\
+Looking at **sign()**, it gives the RSA signature of the input string.  
 
 RSA signature is different from RSA encoding, it follows
 > s = x<sup>d</sup> mod n\
