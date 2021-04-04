@@ -49,10 +49,10 @@ First a bit of information on how AES-CBC works
 
 ![img2](https://dr3dd.gitlab.io/favicon/902px-CBC_encryption.svg.jpg)
 
-The main vulnerable part of CBC is it uses previous block of ciphertext to encrypt next block of plaintext.  
+The main vulnerable part of CBC is that it uses previous block of ciphertext to encrypt next block of plaintext.  
 Similarly, in decryption second block of ciphertext after being decrypted by AES, is XORed with previous block of ciphertext.  
 On analysing this, we can understand that if we change some bits of the previous block of ciphertext then the next block of plaintext will also be affected.  
-Also in CBC encryption and decryption, since for first block there is no previous block, so a randomly generated iv is used.  
+Also in CBC encryption and decryption, since for the first block there is no previous block, a randomly generated iv is used.  
 
 Our message is: *success=0*  
 CBC block size: 16  
