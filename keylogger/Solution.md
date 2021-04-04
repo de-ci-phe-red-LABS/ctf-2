@@ -16,7 +16,7 @@ AAAAAAAAAAAAAAgYABYAAAAAAGzgUAAAAAAAQABAA2AAAAgYABYAAAAAAGzgUAAAAAAAEANgABAAAAgY
 Looking at the hint, it mentions **/dev/input/event0**.\
 /dev/input/eventX contains the logs from various input devices. We can see the events for our input devices from\
 /dev/input/by-id or /dev/input/by-path.\
-We assume that our input is most likely from a keyboard, and now comes the part where we make sense of the byte-stream.\
+We assume that our input is most likely from a keyboard, and now comes the part where we make sense of the byte-stream.  
 
 
 A bit of searching revealed that the log data is stored in 24-byte structures of the form 
